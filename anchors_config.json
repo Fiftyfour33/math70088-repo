@@ -1,0 +1,129 @@
+{
+  "calendar": {
+    "start": null,
+    "end": null,
+    "freq": "D"
+  },
+  "series": [
+    {
+      "name": "epu",
+      "file": "CHNMAINLANDEPU.csv",
+      "date_col": "observation_date",
+      "value_col": "CHNMAINLANDEPU",
+      "parser": "fred_default",
+      "frequency": "M",
+      "stamp_policy": "as_is",
+      "lag_months": 0,
+      "lag_days": 1,
+      "scale": 1.0
+    },
+    {
+      "name": "tpu",
+      "file": "CHNMAINLANDTPU.csv",
+      "date_col": "observation_date",
+      "value_col": "VALUE",
+      "parser": "fred_default",
+      "frequency": "M",
+      "stamp_policy": "as_is",
+      "lag_months": 0,
+      "lag_days": 1,
+      "scale": 1.0
+    },
+    {
+      "name": "usdcny",
+      "file": "DEXCHUS.csv",
+      "date_col": "observation_date",
+      "value_col": "DEXCHUS",
+      "parser": "fred_default",
+      "frequency": "D",
+      "stamp_policy": "as_is",
+      "lag_months": 0,
+      "lag_days": 1,
+      "scale": 1.0
+    },
+    {
+      "name": "reer",
+      "file": "NBCNBIS.csv",
+      "date_col": "observation_date",
+      "value_col": "NBCNBIS",
+      "parser": "fred_default",
+      "frequency": "M",
+      "stamp_policy": "period_plus_months",
+      "lag_months": 1,
+      "lag_days": 1,
+      "scale": 1.0
+    },
+    {
+      "name": "interbank_90d",
+      "file": "IR3TIB01CNM156N.csv",
+      "date_col": "observation_date",
+      "value_col": "IR3TIB01CNM156N",
+      "parser": "fred_default",
+      "frequency": "M",
+      "stamp_policy": "as_is",
+      "lag_months": 0,
+      "lag_days": 1,
+      "scale": 0.01
+    },
+    {
+      "name": "ir",
+      "file": "INTDSRCNM193N.csv",
+      "date_col": "observation_date",
+      "value_col": "INTDSRCNM193N",
+      "parser": "fred_default",
+      "frequency": "M",
+      "stamp_policy": "as_is",
+      "lag_months": 0,
+      "lag_days": 1,
+      "scale": 0.01
+    },
+    {
+      "name": "bond_90d",
+      "file": "IR3TTS01CNM156N.csv",
+      "date_col": "observation_date",
+      "value_col": "IR3TTS01CNM156N",
+      "parser": "fred_default",
+      "frequency": "M",
+      "stamp_policy": "period_plus_months",
+      "lag_months": 1,
+      "lag_days": 1,
+      "scale": 0.01
+    },
+    {
+      "name": "us_imp_cn",
+      "file": "IMPCH.csv",
+      "date_col": "observation_date",
+      "value_col": "IMPCH",
+      "parser": "fred_default",
+      "frequency": "M",
+      "stamp_policy": "period_plus_months",
+      "lag_months": 1,
+      "lag_days": 1,
+      "scale": 1.0
+    },
+    {
+      "name": "exp_to_imp",
+      "file": "XTEITT01CNM156S.csv",
+      "date_col": "observation_date",
+      "value_col": "XTEITT01CNM156S",
+      "parser": "fred_default",
+      "frequency": "M",
+      "stamp_policy": "period_plus_months",
+      "lag_months": 1,
+      "lag_days": 1,
+      "scale": 1.0
+    },
+    {
+      "name": "reserves",
+      "file": "TRESEGCNM052N.csv",
+      "date_col": "observation_date",
+      "value_col": "TRESEGCNM052N",
+      "parser": "fred_default",
+      "frequency": "M",
+      "stamp_policy": "period_plus_months",
+      "lag_months": 1,
+      "lag_days": 1,
+      "scale": 1.0
+    }
+  ]
+}
